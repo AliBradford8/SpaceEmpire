@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Deep Black Box Section */
+        .deep-black-box {
+            background-color: #1a1a1a; /* Deep Black background */
+            padding: 40px 20px; /* Adjust padding as needed */
+            margin-top: 150px; /* Add margin for spacing between boxes */
+            border-top: 4px solid #f5d774; /* Thicker golden border at top */
+            border-bottom: 4px solid #f5d774; /* Thicker golden border at bottom */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+        }
+
+        /* Animation Styles */
+        .animate {
+            opacity: 0; /* Start transparent */
+            transform: translateY(120px); /* Start 120px below */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation */
+        }
+
+        .animate.visible {
+            opacity: 1; /* Fade in */
+            transform: translateY(0); /* Move to original position */
+        }
+
+        /* Link Style */
+        .manifesto-link {
+            display: inline-block;
+            background-color: #f5d774; /* Golden color */
+            color: #1a1a1a;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .manifesto-link:hover {
+            background-color: #b0b6ba; /* Platinum hover effect */
+        }
+
+        /* Notice Styling */
+        .notice {
+            background-color: #1a1a1a;
+            color: #f5d774;
+            padding: 30px;
+            text-align: center;
+            font-size: 18px;
+            border: 2px solid #f5d774;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .notice a {
+            color: #f5d774;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .notice a:hover {
+            color: #b0b6ba;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Initial Notice Section -->
+    <div class="notice">
+        <p><strong>NOTICE:</strong> The full SpaceEmpire Manifesto is available as a downloadable PDF. Click the link below to access it:</p>
+        <a href="The_Space_Empire_Manifesto.pdf" target="_blank">Download the SpaceEmpire Manifesto (PDF)</a>
+    </div>
+
+    <!-- Cover Page -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page01.png" alt="Manifesto Cover" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Table of Contents (Page 2) -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page02.png" alt="Manifesto Table of Contents" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 3 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page03.png" alt="Manifesto Page 3" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 4 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page04.png" alt="Manifesto Page 4" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 5 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page05.png" alt="Manifesto Page 5" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 6 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page06.png" alt="Manifesto Page 6" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 7 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page07.png" alt="Manifesto Page 7" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 8 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page08.png" alt="Manifesto Page 8" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 9 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page09.png" alt="Manifesto Page 9" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 10 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page10.png" alt="Manifesto Page 10" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 11 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page11.png" alt="Manifesto Page 11" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 12 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page12.png" alt="Manifesto Page 12" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Page 13 -->
+    <div class="deep-black-box animate">
+        <img src="manifesto_images_png/page13.png" alt="Manifesto Page 13" style="width: 100%; max-width: 600px;">
+    </div>
+
+    <!-- Final Notice Section -->
+    <div class="notice">
+        <p><strong>NOTICE:</strong> For images of each page of the SpaceEmpire Manifesto, you can explore the full image folder. Click the link below to access the <em>manifesto_images_png</em> folder:</p>
+        <a href="manifesto_images_png/" target="_blank">Explore the SpaceEmpire Manifesto Image Folder</a>
+    </div>
+
+    <!-- Animation Trigger Script -->
+    <script>
+        // Animation trigger on page load
+        window.addEventListener("load", function() {
+            const boxes = document.querySelectorAll('.animate');
+            boxes.forEach(function(box) {
+                box.classList.add('visible');
+            });
+        });
+    </script>
+
+</body>
+</html>
